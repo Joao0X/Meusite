@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="estilo/checkout.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Checkout</h1>
+            <a href="index.html" class="btn">Voltar</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="checkout-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="payment">Pagamento:</label>
+            <select id="payment" name="payment" required>
+                <option value="credit_card">Cartão de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="paypal">Mercado Pago</option>
+                <option value="paypal">Pix</option>
+            </select>
+            <button type="submit" class="btn">Finalizar Compra</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>© Loja de Tênis 2024</p>
+    </footer>
+</body>
+</html>
